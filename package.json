@@ -4,7 +4,11 @@
   "description": "Week 8 BGIP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "NODE_ENV=test tape src/tests/test.js | tap-spec",
+    "testRoutes": "tape src/tests/test.js | tap-spec",
+    "nodemon": "nodemon -q src/server.js",
+    "build": "node src/model/db_build.js"
   },
   "repository": {
     "type": "git",
