@@ -1,0 +1,34 @@
+{
+  "name": "BGIP",
+  "version": "1.0.0",
+  "description": "Week 8 BGIP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-17/BGIP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-17/BGIP/issues"
+  },
+  "homepage": "https://github.com/fac-17/BGIP#readme",
+  "devDependencies": {
+    "dotenv": "^8.1.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "tape": "^4.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "pg": "^7.12.1",
+    "query-string": "^6.8.2",
+    "serve-favicon": "^2.5.0"
+  }
+}
