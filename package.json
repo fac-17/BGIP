@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "NODE_ENV=test tape src/tests/test.js | tap-spec",
+    "test": "tape src/tests/*.tests.js | tap-spec",
     "testRoutes": "tape src/tests/test.js | tap-spec",
     "nodemon": "nodemon -q src/server.js",
     "build": "node src/model/db_build.js"
@@ -25,7 +25,6 @@
     "dotenv": "^8.1.0",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2",
-    "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
   },
   "dependencies": {
