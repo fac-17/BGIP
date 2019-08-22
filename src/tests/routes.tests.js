@@ -1,7 +1,6 @@
 const test = require("tape");
 const supertest = require("supertest");
 const app = require("../app");
-const nock = require("nock");
 
 test("tape is working", t => {
   t.equal(1, 1, "one should be one");
