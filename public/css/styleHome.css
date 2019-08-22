@@ -2,13 +2,18 @@ html {
     padding: 0;
     margin: 0;
     border: none;
+    height: 100vh;
 }
+
 body {
     background: lightblue;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+    height: 100vh;
 }
 
 h1 {
