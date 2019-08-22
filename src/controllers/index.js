@@ -8,10 +8,15 @@ const quotes = require("./quotes");
 console.log(quotes);
 const error = require("./error");
 
-//add home route
+//middleware to redirect when searching by category
+router.use("/quotes/searchcategory/:category",(req,res) => {
+  res.redirect(`/quotes/category/${req.params.category}`)
+})
 router.get("/", home.get);
 router.post("/submitquote", quotes.post);
-router.get(/quotes/, quotes.get);
+router.get("/quotes/category/:category", quotes.getByCategory);
+
+
 //* matches any number of characters
 router.use(error.client);
 router.use(error.server);

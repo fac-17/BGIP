@@ -24,7 +24,7 @@ exports.post = (req, response) => {
     if (err) console.log(err);
     else{
       //redirect to endpoint with category as a query string
-      response.redirect(`/quotes?category=${category}`)
+      response.redirect(`/quotes/category/${category}`)
       // getData.getQuotes(category.toLowerCase(), (err, res) => {
       //   if (err) console.log(err);
       //   console.log(res.rows);
@@ -34,12 +34,13 @@ exports.post = (req, response) => {
   });
 };
 
-exports.get = (req,response) => {
+exports.getByCategory = (req,response) => {
   console.log("redirection successful")
-  const cat=req.url.split("=")[1]
-  getData.getQuotes(cat.toLowerCase(), (err, res) => {
+  let category=req.params.category;
+  getData.getQuotes(category.toLowerCase(), (err, res) => {
+    console.log('came into getData');
     if (err) console.log(err);
-    console.log(res.rows);
+    console.log('about to render');
     response.render("quotes", { title: "quotes", cssPath: "css/styleQuotes.css", categoryQuotes: res.rows });
   });
 }
