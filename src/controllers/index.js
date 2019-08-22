@@ -6,19 +6,12 @@ const router = express.Router();
 const home = require("./home");
 const quotes = require("./quotes");
 
-//const error = require("./error");
+const error = require("./error");
 
 //add home route
 router.get("/", home.get);
-// router.get("/:category", quotes.get);
 router.post("/submitquote", quotes.post);
-// router.use(error.client);
-//router.use(error.server);
-
-//From Reuben needs review
-// const express = require('express');
-// const router = express.Router();
-
-// //res.render('view', { title: 'my other page', layout: 'other' });
+router.use(error.client);
+router.use(error.server);
 
 module.exports = router;
