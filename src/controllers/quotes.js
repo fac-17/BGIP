@@ -2,6 +2,7 @@ const url = require("url");
 const path = require("path");
 const getData = require("../model/queries/getData");
 const postData = require("../model/queries/postData");
+const express = require("express");
 
 // exports.get = (req, response) => {
 //   const category = req.url.split("/")[1];
@@ -21,11 +22,25 @@ exports.post = (req, response) => {
 
   postData(category, quote, author, keyword, (err, res) => {
     if (err) console.log(err);
-  });
-
-  getData(category.toLowerCase(), (err, res) => {
-    if (err) console.log(err);
-    console.log(res.rows);
-    response.render("quotes", { categoryQuotes: res.rows });
+    else{
+      //redirect to endpoint with category as a query string
+      response.redirect(`/quotes/category/${category}`)
+      // getData.getQuotes(category.toLowerCase(), (err, res) => {
+      //   if (err) console.log(err);
+      //   console.log(res.rows);
+      //   response.render("quotes", { title: "Home", cssPath: "css/styleQuotes.css", categoryQuotes: res.rows });
+      // });
+    }
   });
 };
+
+exports.getByCategory = (req,response) => {
+  console.log("redirection successful")
+  let category=req.params.category;
+  getData.getQuotes(category.toLowerCase(), (err, res) => {
+    console.log('came into getData');
+    if (err) console.log(err);
+    console.log('about to render');
+    response.render("quotes", { title: "quotes", cssPath: "css/styleQuotes.css", categoryQuotes: res.rows });
+  });
+}
