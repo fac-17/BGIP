@@ -6,7 +6,7 @@ const Pool = pg.Pool;
 const url = require("url");
 require("env2")("./.env");
 
-let DATABASE_URL = process.env.DB_URL;
+let DATABASE_URL = process.env.DATABASE_URL;
 if (!DATABASE_URL) throw new Error("Environment variable must be set");
 const params = url.parse(DATABASE_URL);
 const [username, password] = params.auth.split(":");
