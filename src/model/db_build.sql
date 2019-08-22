@@ -15,6 +15,5 @@ CREATE TABLE quotes
 INSERT INTO quotes
     (category, quote, author, keyword)
 VALUES
-    ('film', 'I am going to kill bill', 'Uma Thurman', 'revenge');
-
+    ('movies', 'I am going to kill bill', 'Uma Thurman', 'revenge');
 COMMIT;
