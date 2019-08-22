@@ -19,6 +19,6 @@ exports.getByCategory = (req,response) => {
   let category=req.params.category;
   getData.getQuotes(category, (err, res) => {
     if (err) console.log(err);
-    response.render("quotes", { title: "quotes", cssPath: "css/styleQuotes.css", categoryQuotes: res.rows });
+    response.render("quotes", { title: "quotes", cssPath: "/css/styleQuotes.css", categoryQuotes: res.rows });
   });
 }
