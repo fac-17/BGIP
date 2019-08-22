@@ -1,4 +1,4 @@
-exports.client = (err,req, res, next) => {
+exports.client = (req, res) => {
   res.status(404).render("error", {
     title: "404",
     cssPath: "/css/error.css",
@@ -9,7 +9,7 @@ exports.client = (err,req, res, next) => {
   });
 };
 
-exports.server = (err,req,res,next) => {
+exports.server = (err, req, res, next) => {
   res.status(500).render("error", {
     title: "500",
     cssPath: "/css/error.css",
