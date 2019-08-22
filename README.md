@@ -1,4 +1,4 @@
-# Pe~~a~~rls of Wisdom by Reuben, Emaggy, Gigi and Leonie - Week 8
+# Pearls of Wisdom by Reuben, Emaggy, Gigi and Leonie - Week 8
 
 ## Team
 Reuben 🎻 
@@ -11,7 +11,7 @@ Leonie :baby:
 
 
 ## The app 
-**Pe~~a~~rls of Wisdom** is a quote taking app that allows users to log quotes and add them to an account/ group. Users can create a new account or use an existing account to add quotes to.  
+**Pearls of Wisdom** is a quote taking app that allows users to log quotes and add them to an account/ group. Users can create a new account or use an existing account to add quotes to.  
 
 
 ## Code of conduct 
