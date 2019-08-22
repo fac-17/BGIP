@@ -19,5 +19,13 @@ test("Check / route is being serverd", t => {
 });
 
 //test 500 route
-
-//test 4040 route
+//test 404 route
+test("Check 404 error is being served correctly", t => {
+  supertest(app)
+  .get("/noendpointhere")
+  .expect(404)
+  .end((err, res) => {
+    t.error(err);
+    t.end();
+  })
+});
