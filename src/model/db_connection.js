@@ -4,7 +4,9 @@ const Pool = pg.Pool;
 
 //import url
 const url = require("url");
-require("env2")("./.env");
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 let DATABASE_URL = process.env.DATABASE_URL;
 if (!DATABASE_URL) throw new Error("Environment variable must be set");
