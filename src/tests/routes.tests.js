@@ -11,21 +11,20 @@ test("tape is working", t => {
 test("Check / route is being serverd", t => {
   supertest(app)
     .get("/")
-    .expect(200)
     .end((err, res) => {
-      t.error(err);
+      t.equals(null, err, "Home route error should be null");
+      t.equals(200, res.statusCode, "Home status code should be 200");
       t.end();
     });
 });
 
-//test 500 route
 //test 404 route
 test("Check 404 error is being served correctly", t => {
   supertest(app)
   .get("/noendpointhere")
-  .expect(404)
   .end((err, res) => {
-    t.error(err);
+    t.equals(null, err, "404 route error should be null");
+    t.equals(404, res.statusCode, "404 status code should be 404");
     t.end();
   })
 });
