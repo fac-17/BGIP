@@ -121,3 +121,11 @@ quotes.hbs
   {{/each}}
 </ul>
 ```
+
+## Issues
+
+Adding png.images to handlebars
+Naming with the categorys (lowercase in backend, capitalized in front end
+Using FETCH- Not working well with redirecting
+Making a test for server errors - pointless
+Lack of time for database testing
