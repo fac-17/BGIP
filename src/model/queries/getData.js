@@ -11,4 +11,4 @@ const getQuotes = (category, cb) => {
   );
 };
 
-module.exports = getQuotes;
+module.exports = {getQuotes};
