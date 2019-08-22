@@ -15,7 +15,10 @@ Leonie :baby:
 
 
 ## Code of conduct 
-- CSS: 
+- Changing pairs frequently
+- Commit regularly
+- 20/20/20
+- Plan and document (file structure, layout, schema)
 
 ## Milestones 
 Wednesday morning: Wireframe, file structure
@@ -66,7 +69,7 @@ Thursday afternoon: CSS
     - [ ] back home route & TDD 
     - [x] server side error 
     - [ ] Search by category (without posting) & TDD 
-- [ ] CSS 
+- [x] CSS 
 
 ## Stretch Goal
 - [ ] Like quotes and display top on home page Like quotes and display top on home page 
