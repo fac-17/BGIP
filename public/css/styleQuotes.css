@@ -1,0 +1,62 @@
+html {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body {
+    background: lightblue;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.quote, .author, .keyword {
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    text-align: start;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.quote {
+    height: 50px;
+}
+
+.home_button {
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    z-index: 100;
+}
+
+.home_button, .category, .submit_button {
+    background: #282828;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+input {
+    min-height: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+footer {
+    background-color: #282828;
+    color: aliceblue;
+    padding: 5px;
+    margin-top: 50px;
+}
