@@ -1,17 +1,21 @@
 <form class="quote-form" autocomplete="off" action="/submitquote" method="post">
     <label for="category">Category</label>
     <select class="category" name="category" id="category" required>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+        <option value="Food">Food</option>
+        <option value="Meet-ups">Meet-ups</option>
+        <option value="Movies">Movies</option>
+        <option value="Coding">Coding</option>
+        <option value="Random">Random</option>
     </select>
+    <br>
     <label for="quote"> Quote</label>
-    <input type="text" name="quote" class="quote" id="quote" required>
+    <textarea type="text" name="quote" class="quote" id="quote" required></textarea>
+    <br>
     <label for="author"> Author</label>
     <input type="text" name="author" class="author" id="author" required>
+    <br>
     <label for="keyword"> Keyword</label>
     <input type="text" name="keyword" class="keyword" id="keyword" required>
+    <br>
     <input type="submit" value="Submit" class="submit_button">
 </form>
