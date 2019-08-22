@@ -25,6 +25,7 @@
     "dotenv": "^8.1.0",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
   },
   "dependencies": {

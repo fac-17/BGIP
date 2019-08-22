@@ -1,6 +1,6 @@
 const test = require("tape");
-const request = require("supertest");
-const app = require("../server");
+const supertest = require("supertest");
+const app = require("../app");
 
 test("tape is working", t => {
   t.equal(1, 1, "one should be one");
@@ -8,13 +8,11 @@ test("tape is working", t => {
 });
 
 test("Check / route is being serverd", t => {
-  request(app)
+  supertest(app)
     .get("/")
     .expect(200)
-    .expect("content-type", /html/)
     .end((err, res) => {
       t.error(err);
-      t.equal(res.body, "hello world", "Should return hello world string");
       t.end();
     });
 });
