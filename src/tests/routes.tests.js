@@ -7,6 +7,7 @@ test("tape is working", t => {
   t.end();
 });
 
+//test home route
 test("Check / route is being serverd", t => {
   supertest(app)
     .get("/")
@@ -16,3 +17,7 @@ test("Check / route is being serverd", t => {
       t.end();
     });
 });
+
+//test 500 route
+
+//test 4040 route
