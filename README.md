@@ -13,6 +13,9 @@ Leonie :baby:
 ## The app 
 **Pearls of Wisdom** is a quote taking app that allows users to log quotes and add them to an account/ group. Users can create a new account or use an existing account to add quotes to.  
 
+![](https://i.imgur.com/xZ3mHRs.png)
+![](https://i.imgur.com/08OKmSw.png)
+
 ![](https://i.imgur.com/WAbru9r.png)
 
 
