@@ -22,3 +22,11 @@ exports.getByCategory = (req,response) => {
     response.render("quotes", { title: "quotes", cssPath: "/css/styleQuotes.css", categoryQuotes: res.rows });
   });
 }
+
+exports.getByKeyword = (req, response) => {
+  let keyword=req.params.keyword;
+  getData.getKeywordQuotes(keyword, (err, res) => {
+    if(err) console.log(err); //500 page should render here
+    response.render("quotes", { title: "quotes", cssPath: "/css/styleQuotes.css", categoryQuotes: res.rows });//rename to quotes alone
+  });
+}
