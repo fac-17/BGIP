@@ -144,10 +144,13 @@ quotes.hbs
 </ul>
 ```
 
-## Issues
+[Slides](https://hackmd.io/@tSOHsGuAScuCuTw78vu_AQ/r1w82STNS#/)
 
-Adding png.images to handlebars
-Naming with the categorys (lowercase in backend, capitalized in front end
-Using FETCH- Not working well with redirecting
-Making a test for server errors - pointless
-Lack of time for database testing
+
+### What we struggled with?
+- server side validation
+- inserting PNG files in handlesbars
+- Using FETCH- Not working well with redirecting 
+- Making tests for server errors
+- Naming with the categories (lowercase in backend, capitalized in front end
+- Lack of time for database testing
