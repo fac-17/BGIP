@@ -19,13 +19,22 @@
     <br>
     <input type="submit" value="Submit" class="submit_button">
 </form>
+<form action="/quotes/searchcategory" method="post">
 <label> Search By Category
-    <select class="category" name="category" id="categorySearch" required>
+    <select class="category" name="category" required>
       <option value="food">Food</option>
       <option value="meetups">Meet-ups</option>
       <option value="movies">Movies</option>
       <option value="coding">Coding</option>
       <option value="random">Random</option>
     </select>
-    <input type="button" id="categoryButton" value="Search" />
+    <input type="submit" value="Search" class="submit_button"/>
 </label>
+</form>
+
+<form action="/quotes/searchkeyword" method="post">
+<label> Search By Keyword
+    <input type="text" name="keyword" class="keyword" required/>
+    <input type="submit" value="Search" class="submit_button"/>
+</label>
+</form>

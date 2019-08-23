@@ -48,14 +48,15 @@ h1 {
     padding: 10px;
 }
 
-input {
+input, select {
+    -webkit-appearance:none;
     min-height: 30px;
 }
 
 form {
     display: grid;
     grid-template-columns: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 300px;
 }
 
