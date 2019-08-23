@@ -33,11 +33,26 @@ Thursday afternoon: CSS
 ![](https://i.imgur.com/5d8oqUD.jpg)
 ![](https://i.imgur.com/P0xKuZd.jpg)
 
+## Install
+```
+npm install
+```
+```
+npm test
+```
+```
+npm run nodemon
+```
+OR
+```
+npm start
+```
+
 
 ## To-Dos 
 - [x] Come up with idea
 - [x] Set up workflow/milestones
-- [ ] Set up code of conduct 
+- [x] Set up code of conduct 
 - [x] Decide on file structure & wireframe
 - [x] Create user flow & take pic for readme
 - [x] Set up repo 
@@ -64,18 +79,18 @@ Thursday afternoon: CSS
 - [x] set up {{#each}} in queriesByCategory to populate the table with quotes
 - [x] Connect to Heroku 
 - [ ] Create routes
-    - [ ] redirect when post request is made to /submitquote
+    - [x] redirect when post request is made to /submitquote
     - [x] Home & TDD 
     - [x] error client side & TDD 
-    - [ ] post route & TDD 
-    - [ ] back home route & TDD 
+    - [x] post route & TDD 
+    - [x] back home route & TDD 
     - [x] server side error 
-    - [ ] Search by category (without posting) & TDD 
+    - [x] Search by category (without posting) & TDD 
 - [x] CSS 
 
 ## Stretch Goal
 - [ ] Like quotes and display top on home page Like quotes and display top on home page 
-- [ ] Search quotes by keyword
+- [x] Search quotes by keyword
 - [ ] Delete quotes
 
 ## File structure 
@@ -96,6 +111,7 @@ Thursday afternoon: CSS
         - quotes.js (exports each function)
     - **views folder**
         - home.hbs (fills into body of homepage, no header )
+        - error.hbs (view for errors 500 and 404)
         - quotes.hbs (fills into body of quotes page)
         - **layout folder**
             - main.hbs (common skeleton of page, no header)
@@ -103,6 +119,7 @@ Thursday afternoon: CSS
         - **partials folder**
             - head.hbs (metatags, fills into main.hbs)
             - header.hbs (fills into quotes.hbs)
+            - form.hbs
             - footer.hbs (fills into main.hbs)
             - quotesByCategory.hbs (fills into quotes.hbs)
 
