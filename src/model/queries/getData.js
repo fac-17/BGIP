@@ -11,4 +11,15 @@ const getQuotes = (category, cb) => {
   );
 };
 
-module.exports = {getQuotes};
+const getKeywordQuotes = (keyword, cb) => {
+  db_connection.query(
+    `SELECT * FROM quotes WHERE keyword ILIKE $1`,
+    [keyword],
+    (err, result) => {
+      if (err) return cb(err);
+      cb(null, result);
+    }
+  );
+}
+
+module.exports = {getQuotes, getKeywordQuotes};
