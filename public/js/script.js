@@ -1,10 +1,11 @@
-const selectDropDown = document.querySelector("#categorySearch")
-console.log(selectDropDown);
+const selectDropDown = document.querySelector("#categorySearch");
+
 if (selectDropDown) {
-  const category=selectDropDown.value;
+  const category = selectDropDown.value;
   document.querySelector("#categoryButton").addEventListener("click", e => {
     e.preventDefault();
-    fetch(`/quotes/searchcategory/${category}`)
-    .then(response=>console.log(response))
+    fetch(`/quotes/searchcategory/${category}`).then(response =>
+      console.log(response)
+    );
   });
 }
